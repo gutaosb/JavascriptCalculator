@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
-    
+    <div id="calculator">
+        <div id="text-box">
+            <input id="text-box-input" type="text" placeholder="0">
+        </div>
+
+        <div class="row">
+            <button onclick="calculate('action', 'c')" class="btn clear" type="button">C</button>
+            <button onclick="calculate('val', '/')" class="btn op" type="button">/</button>
+        </div>
+
+        <div class="row">
+            <button onclick="calculate('val', 7)" class="btn num" type="button">7</button>
+            <button onclick="calculate('val', 8)" class="btn num" type="button">8</button>
+            <button onclick="calculate('val', 9)" class="btn num" type="button">9</button>
+            <button onclick="calculate('val', '*')" class="btn op" type="button">*</button>
+        </div>
+
+        <div class="row">
+            <button onclick="calculate('val', 4)" class="btn num" type="button">4</button>
+            <button onclick="calculate('val', 5)" class="btn num" type="button">5</button>
+            <button onclick="calculate('val', 6)" class="btn num" type="button">6</button>
+            <button onclick="calculate('val', '-')" class="btn op" type="button">-</button>
+        </div>
+
+        <div class="row">
+            <button onclick="calculate('val', 1)" class="btn num" type="button">1</button>
+            <button onclick="calculate('val', 2)" class="btn num" type="button">2</button>
+            <button onclick="calculate('val', 3)" class="btn num" type="button">3</button>
+            <button onclick="calculate('val', '+')" class="btn op" type="button">+</button>
+        </div>
+
+        <div class="row">
+            <button onclick="calculate('val', 0)" class="btn num zero" type="button">0</button>
+            <button onclick="calculate('val', '.')" class="btn num" type="button">.</button>
+            <button onclick="calculate('action', '=')" class="btn op" type="button">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
